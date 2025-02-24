@@ -1,0 +1,113 @@
+:root { 
+    --color-primario: rgb(236, 0, 139); 
+    --color-secundario: rgb(255, 241, 0);
+    --color-fondo: #efefef;
+
+    --fuente-primaria: 'Times New Roman', Times, serif;
+    --fuente-secundia: Arial, Helvetica, sans-serif;
+    
+}
+
+/** Box Model **/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    background-color: var(--color-fondo);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** General text siezes **/
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/** Header **/
+.header h1{
+    margin: 0;
+}
+
+/** Navegación **/
+.nav {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .nav {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+}
+
+.nav__links {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+}
+
+.nav__links:hover {
+    background-color: var(--color-secundario);
+    color: black;
+}
+
+/** Imagen de presentacion **/
+.img-presentacion {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+/** Formulario **/
+.formulario {
+
+}
+
+.formulario__nombre {
+    
+}
+
+.formulario__telefono {
+
+}
+
+.formulario__correo {
+
+}
+
+.formulario__mensaje {
+
+}
+
+.formulario__enviar {
+
+}
+
+/** Footer **/
+.footer {
+    background-color: var(--color-primario);
+}
+
+.footer__redes-sociales {
+    text-align: center;
+}
